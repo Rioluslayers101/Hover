@@ -1,37 +1,52 @@
+.body{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+
 .fondo{
 position: absolute;
 width: 100%;
-height: 100%;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-content: center;
 left: 0px;
 top: 0px;
 background: linear-gradient(179.04deg, #e40707 0.82%, #6b805aab 97.99%);
 
 }
 .circulo{
-position: absolute;
-width: 227px;
-height: 228px;
-left: 42%;
-top: 35%;
-background: #583df2;
-border-radius: 60%;
+position: relative;
+width: 10rem;
+height: 10rem;
+overflow: hidden;
+background: #000000;
+border-radius: 100px;
 }
 .imgen{
-    position: fixed;
-    width: 205px;
-    height: 207px;
-    left: 43%;
-    top: 36%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
     background: url(../HYRxODnM_400x400.png);
-    border-radius: 100px;
+    object-fit: cover;
 }
 .D{
 position: absolute;
-width: 205px;
-height: 208px;
-left: 43%;
-top: 36%;
-border-radius: 100px;
+width: 100%;
+height: 100%;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+transform: translateY(100%);
+transition: all 0.3s;
 background: linear-gradient(0deg, #4aee09 40.14%, rgba(233, 200, 12, 0) 100%);
- 
+}
+.D h1{
+font-family: Roboto;
+font-size: 1.2em;
+margin-bottom: 1em;
+text-align: center;
+color: #FFFFFF;
 }
